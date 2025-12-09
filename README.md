@@ -1,7 +1,7 @@
-# diabetes-risk-global-health-analysis
+# Diabetes-risk-global-health-analysis
 Data analysis project exploring diabetes risk predictions and global health indicators using Excel, Python, SQL, Power BI, and Tableau
 
-## suggested portfolio structure
+## Suggested portfolio structure
 1. introduction
 2. data source and context of the files
 3. data preperation and cleaning
@@ -12,7 +12,7 @@ Data analysis project exploring diabetes risk predictions and global health indi
 8. limitations and future work
 9. reflection of skills what you have learned
 
-### explaining each step
+### Explaining each step
 1. explain why i should care about this topic and how it is affected by global health, get them to understand what my project is trying to uncover?
 2. describe each dataset, its origin and key variables
 3. how did you check quality, remove issues and prepare the data
