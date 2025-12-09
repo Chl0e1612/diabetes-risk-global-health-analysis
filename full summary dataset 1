@@ -1,0 +1,23 @@
+## step 1: clean in excel
+- rename columns (diagnosed diabetes to predicted probability and id to person id)
+- remove duplicates
+- checked for missing values
+- ensure probabilities are numeric as certain ones were text
+- add risk categories using code= =IF(B2<0.33,"Low Risk",IF(B2<0.66,"Medium Risk","High Risk"))
+
+## step 2: analsyse in python
+- load cleaned CSV
+- check distribution
+- plot histogram of probabilities
+- calculate % high risk
+- save plots into image folder and ppt
+
+## step 3: power BI
+creat visuals such as:
+- 
+
+## step 4: Tableau
+create story pages and visualisation:
+- probability distribution
+- risk segmentation
+- comparison with global dataset (dashboards)
