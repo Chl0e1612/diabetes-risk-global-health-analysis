@@ -1,0 +1,46 @@
+
+
+Best variables from dataset to link to diabetes:
+1. metabolic/ cardiovascular conditions
+-% Death Cardiovascular
+-Air Pollution Death Rate – Ischaemic Heart Disease
+-Air Pollution Death Rate – Stroke
+-Chronic Respiratory Disease Mortality (weaker link but still lifestyle-related)
+
+Why it’s useful:
+Diabetes patients have 2–4× higher risk of heart disease → strong link for dashboard insights.
+
+2. Nutrition and diet composition:
+-Diet Composition Sugar
+-Diet Calories Carbohydrates
+-Diet Calories Fat
+-Diet Composition Oils and Fats
+-Fruit Consumption categories
+-Cereal consumption categories
+
+Why it’s useful:
+Sugar, high-carb diets, and fats strongly influence type 2 diabetes risk.
+
+3. Economic indicators:
+-GDP per Capita
+-GNI per Capita
+-Government Expenditure on Health
+-Income per Capita
+
+Why it’s useful:
+Higher-income countries often have higher obesity & diabetes rates due to lifestyle + nutrition patterns.
+
+4. Demographics:
+- % population aged 65+
+- % population aged 70-74, 75-79, 80+
+- %population aged 15-64
+
+why its useful:
+you can compare age distribution from your diabetes dataset (file 1) with global aging population trends
+
+5. Mortality indicators
+- infant mortality rate
+- neonatal mortality
+- maternal mortality ratio
+- death rate total
+showing country development levels
