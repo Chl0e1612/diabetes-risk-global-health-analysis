@@ -1,0 +1,32 @@
+## step 1: clean in excel
+- remove irrelevant columns (will note which columns i have removed)
+- standardairse names
+- checked for missing values
+- filter years from 2000-2020
+- add derived fileds: income category, sugar category, population age category
+income category: =IF(gdp_per_capita<5000,"Low",
+   IF(gdp_per_capita<20000,"Middle","High"))
+
+
+
+## step 2: analsyse in python
+- load cleaned datasets
+- check datatypes
+- plot histogram or scatterplots
+- calculate summary statistics
+- save plots into image folder and ppt
+
+## step 3: power BI
+creat visuals such as:
+- create dashboard
+- distribution of diabetes risk levels
+- sugar intake by country
+- GDP vs dietary indicators
+- cardiovascular mortality trends
+- Mention others when present
+
+## step 4: Tableau
+create story pages and visualisation:
+- create multiple sheets
+- build maps, scatterplots, and trend lines
+- comparison with probabilty (dashboards)?
