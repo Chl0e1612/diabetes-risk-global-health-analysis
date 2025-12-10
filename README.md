@@ -26,25 +26,28 @@ Data analysis project exploring diabetes risk predictions and global health indi
 
 ## Excel cleaning programme performed
 ### Dataset 1: Predicted Diabetes
-
-Step 1. Download and open the origional file from Kaggle in excel and save as diabetes_raw: https://www.kaggle.com/datasets/anthonytherrien/diabetes-prediction-vault
-Step 2. Open another copy of this file and rename it as diabetes_clean
-Step 3. Within the diabetes_clean file, change the range into an excel table with headers (select all the columns and Ctrl + T)
-Step 4: Fix the data by removing the issue with text to numerical (issues with certain data displaying ' before the value ('0.978654), select entire diagnosed_diabetes column, go to data then text to columns then next then finish, then go to home then number and make it 3 decimal places (this tidies up the numbers and makes them real numbers)
-Step 5: rename and add useful columns: rename diagnosed_diabetes to predicted_probability (clearer) and id to person_id. in column C add the header risk_category and enter the code:
+1. Download and open the origional file from Kaggle in excel and save as diabetes_raw: https://www.kaggle.com/datasets/anthonytherrien/diabetes-prediction-vault
+2. Open another copy of this file and rename it as diabetes_clean
+3. Within the diabetes_clean file, change the range into an excel table with headers (select all the columns and Ctrl + T)
+4: Fix the data by removing the issue with text to numerical (issues with certain data displaying ' before the value ('0.978654), select entire diagnosed_diabetes column, go to data then text to columns then next then finish, then go to home then number and make it 3 decimal places (this tidies up the numbers and makes them real numbers)
+5: rename and add useful columns: rename diagnosed_diabetes to predicted_probability (clearer) and id to person_id. in column C add the header risk_category and enter the code:
 =IF([@predicted_probability]<0.33,"Low Risk",
    IF([@predicted_probability]<0.66,"Medium Risk","High Risk"))
-Step 6: Quality check: check if there are any blanks (none), are there any values over 1 (none), can also add conditional formatting into the tables to show colour-based evidence and trends in the data, add add a PivotTable to show how many low/medium/high risk people there are (shows you validated the data and gives nice summary for the report:
+6: Quality check: check if there are any blanks (none), are there any values over 1 (none), can also add conditional formatting into the tables to show colour-based evidence and trends in the data, add add a PivotTable to show how many low/medium/high risk people there are (shows you validated the data and gives nice summary for the report:
 insert then PivotTable then Table/Range, then put risk_category in rows and sum of id in Values
-Step 7: save diabetes_clean for evidence in google sheets and excel
+7: save diabetes_clean for evidence in google sheets and excel
 
 ### Dataset 2: Global health
 
-Step 1: Download and open the origional file from Kaggle in excel and save as global_health_raw: https://www.kaggle.com/datasets/miguelroca/global-health-nutrition-mortality-economic-data
-Step 2. Open another copy of this file and rename it as global_health_clean
-Step 3. Within the diabetes_clean file, change the range into an excel table with headers (select all the columns and Ctrl + T)
-Step 4: Remove irrelevant columns inside global_health_clean. What i have deleted:
+1: Download and open the origional file from Kaggle in excel and save as global_health_raw: https://www.kaggle.com/datasets/miguelroca/global-health-nutrition-mortality-economic-data
+2. Open another copy of this file and rename it as global_health_clean
+3. Within the diabetes_clean file, change the range into an excel table with headers (select all the columns and Ctrl + T)
+4: Remove irrelevant columns inside global_health_clean. What i have deleted:
 government expenditure on military/ education, homocide rates, conflict and terrosism death, % injruy deaths, battle related deaths, clean fuel and technology, basic hand washing rural/ urban/ washing total, safely sanitation rural/ urban/total, basic sanitation services rural/urban/total, basic drinking wayer services, pharmacists, dentists, nurses and midwives, doctors, universal hea;th care coverage, adolescent birth rate, reproductive age women, road traffic deaths, invention against NTDs, CI value hepititis B/ TB/ malaria/ maternal mortality ratio, % birth attended by skilled personal, poisoning mortality rate, unsafe wash mortality rate, CI Value Air Pollution Death Rate Trachea Bronchus Lung Cancers Age Standarized/ cancers/ chronic ostructive pulmonary disease age/ lower respiratory infections age, suicides rate, under 5 mortality rate, infant mortality, 
 This is so there is less noise, faster analysis and it shows that I have made informed choices, focusing mainly on diabetes related lifestyle factors
-Step 5: clean columm names such as % death - caridovascular disease to cardio_death_%. this allows it to be easier for readability
-Step 6: 
+5: clean columm names such as % death - caridovascular disease to cardio_death_%. this allows it to be easier for readability
+6: 
+
+## Python analysis
+### Dataset 1: Predicted Diabetes
+
